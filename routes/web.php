@@ -18,7 +18,8 @@ Route::get('/', function () {
 });
 Route::get("/profile/{id}/{email}", function($id,$email){
     $info = ["Rizwan", "rizwan@gmail.com",45,"Karachi"];
-    return view('profile', ['myId' => $id, 'myEmail' => $email, 'info' => $info]);
+    $age = "10";
+    return view('profile', ['myId' => $id, 'myEmail' => $email, 'info' => $info , 'age' => $age]);
     // return $id+$mi;
 });
 Route::get("/welcome", function(){

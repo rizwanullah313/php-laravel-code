@@ -12,5 +12,11 @@
     @foreach($info as $user)
 {{$user}}<br>
 @endforeach
+
+@if($age >30)
+<p>You are older</p>
+@else
+<p>You are yonger</p>
+@endif
 </body>
 </html>
