@@ -8,5 +8,9 @@
 </head>
 <body>
     <h1>Mr Profile</h1>
+    <h4>{{$myId}} ==== {{$myEmail}}</h4>
+    @foreach($info as $user)
+{{$user}}<br>
+@endforeach
 </body>
 </html>

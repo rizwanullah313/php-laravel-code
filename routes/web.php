@@ -16,10 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get("/profile/{id}/{mi}", function($id,$mi){
-    // return view('profile');
-    return $id+$mi;
+Route::get("/profile/{id}/{email}", function($id,$email){
+    $info = ["Rizwan", "rizwan@gmail.com",45,"Karachi"];
+    return view('profile', ['myId' => $id, 'myEmail' => $email, 'info' => $info]);
+    // return $id+$mi;
 });
+Route::get("/welcome", function(){
+  $name = request('name');
+  $address = request("address");
+  return $name . " === " . $address;
+});
+// http://localhost:8000/welcome/?name=rizwanullah&address=karachi
+
 // Route::get("/profile", function()
 // {
 //   return "Rizwan";
