@@ -36,11 +36,11 @@ class postsController extends Controller
     // $posts = Post::find([1,2,3]);
     // print_r($posts);
 
-    $posts = Post::find([1,2,3]);
-    // print_r($posts);
-    foreach ($posts as $post):
-            echo $post->title, "<br>";
-    endforeach;
+    // $posts = Post::find([1,2,3]);
+    // // print_r($posts);
+    // foreach ($posts as $post):
+    //         echo $post->title, "<br>";
+    // endforeach;
 
 
     // Fr update
@@ -56,5 +56,11 @@ class postsController extends Controller
 // }
 
 
-    }
-}
+// This is for deletion code
+// $post = Post::find(3);
+// if($post->delete())
+// {
+//     echo "deleted data successfully";
+// }
+//     }
+// }
