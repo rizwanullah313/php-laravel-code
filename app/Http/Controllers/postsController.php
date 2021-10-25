@@ -28,8 +28,19 @@ class postsController extends Controller
 
     
     // Second way of Fetch data only single data
-    $post = Post::find(2);
-    print_r($post->body);
+    // $post = Post::find(2);
+    // print_r($post->body);
+
+
+    // Display all records frm database
+    // $posts = Post::find([1,2,3]);
+    // print_r($posts);
+
+    // $posts = Post::find([1,2,3]);
+    // // print_r($posts);
+    // foreach ($posts as $post):
+    //         echo $post->title, "<br>";
+    // endforeach;
 
     }
 }
