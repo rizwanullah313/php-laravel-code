@@ -17,7 +17,19 @@ class postsController extends Controller
     //     $newPost->category = "Laravel";
     //     $newPost->save();
     
-    $newPost = Post::create(['title' => 'Second Post Title', 'body' => 'Second Post Body', 'category' => 'reactjs']);
-    $newPost->save();
+
+    // $newPost = Post::create(['title' => 'Second Post Title', 'body' => 'Second Post Body', 'category' => 'reactjs']);
+    // $newPost->save();
+
+
+    // Fetch data from database and display it
+    // $post = Post::where('id', 3)->first();
+    // print_r($post->title);
+
+    
+    // Second way of Fetch data only single data
+    $post = Post::find(2);
+    print_r($post->body);
+
     }
 }
