@@ -16,4 +16,37 @@
 ->mysql k database k name yaha per env file me change kerna zarory h
 
 
-sudo apt-get install php-mysql
+->sudo apt-get install php-mysql
+
+
+->
+php artisan migration list
+
+                                       
+  Command "migration" is not defined.  
+                                       
+  Did you mean one of these?           
+      make:migration                   
+      migrate                          
+      migrate:fresh                    
+      migrate:install                  
+      migrate:refresh                  
+      migrate:reset                    
+      migrate:rollback                 
+      migrate:status   // migration k status batayega                
+                                     
+-> php artisan migrate:status
+
+-> create another migration
+-> php artisan make:migration create_customers_table
+
+-> php artisan migrate:rollback
+-> ye last wala execute wapas delete kerdegy
+
+
+-> php artisan migrate:fresh
+-> ye sab refresh kerdega tables and jo changing howey ho like if table modify
+
+
+-> php artisan make:migration add_abc_to_posts_table
+-> ab agar me add_abc_to_posts_table yaha per kuch add kertha ho thu wo posts wali real class me add hojyngy with table in mysql database
