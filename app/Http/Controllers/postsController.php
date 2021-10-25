@@ -11,11 +11,11 @@ class postsController extends Controller
         return 'Welcome';
     }
     public function create(){
-    //     $newPost = new Post;
-    //     $newPost->title = "New title";
-    //     $newPost->body = "New Post Body";
-    //     $newPost->category = "Laravel";
-    //     $newPost->save();
+        $newPost = new Post;
+        $newPost->title = "New title";
+        $newPost->body = "New Post Body";
+        $newPost->category = "Laravel";
+        $newPost->save();
     
 
     // $newPost = Post::create(['title' => 'Second Post Title', 'body' => 'Second Post Body', 'category' => 'reactjs']);
@@ -62,5 +62,5 @@ class postsController extends Controller
 // {
 //     echo "deleted data successfully";
 // }
-//     }
-// }
+ }
+}
