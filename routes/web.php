@@ -13,20 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get("/profile/{id}/{email}", function($id,$email){
-    $info = ["Rizwan", "rizwan@gmail.com",45,"Karachi"];
-    $age = "10";
-    return view('profile', ['myId' => $id, 'myEmail' => $email, 'info' => $info , 'age' => $age]);
-    // return $id+$mi;
-});
-Route::get("/welcome", function(){
-  $name = request('name');
-  $address = request("address");
-  return $name . " === " . $address;
-});
+
+Route::get('/', "App\Http\Controllers\userController@index");
+
+Route::get("/profile/{id}/{email}", "App\Http\Controllers\userController@show");
+Route::get("/welcome", "App\Http\Controllers\userController@welcome");
 // http://localhost:8000/welcome/?name=rizwanullah&address=karachi
 
 // Route::get("/profile", function()
