@@ -208,3 +208,23 @@ Psy Shell v0.10.9 (PHP 7.4.9 — cli) by Justin Hileman
 => true
 >>> 
 
+-> is se pehly web pack saas and saas loader user kia
+saas k folder resources me bana k usme app.scss k file laga deye
+per run kia
+
+->per ye bootstrap wala code use kia jo app.scss me save howa
+-> php artisan ui bootstrap
+
+
+-> npm install
+
+-> npm run dev
+
+-> npm i bootswatch
+
+->
+@import "~bootswatch/dist/materia/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/materia/bootswatch";
+
+
