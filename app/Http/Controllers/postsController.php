@@ -36,11 +36,25 @@ class postsController extends Controller
     // $posts = Post::find([1,2,3]);
     // print_r($posts);
 
-    // $posts = Post::find([1,2,3]);
-    // // print_r($posts);
-    // foreach ($posts as $post):
-    //         echo $post->title, "<br>";
-    // endforeach;
+    $posts = Post::find([1,2,3]);
+    // print_r($posts);
+    foreach ($posts as $post):
+            echo $post->title, "<br>";
+    endforeach;
+
+
+    // Fr update
+//     $post = Post::find(2);
+//     $post->title = "Update Title";
+//     $post->body = "Updated Body";
+// if($post->save())
+// {
+//     echo "updated successfully";
+// }
+// else{
+//     " not Updated ";
+// }
+
 
     }
 }
