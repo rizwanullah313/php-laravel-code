@@ -18,6 +18,11 @@ Route::get('/', "App\Http\Controllers\userController@index");
 
 Route::get("/profile/{id}/{email}", "App\Http\Controllers\userController@show");
 Route::get("/welcome", "App\Http\Controllers\userController@welcome");
+
+
+Route::get("/posts", "App\Http\Controllers\postsController@create");
+
+
 // http://localhost:8000/welcome/?name=rizwanullah&address=karachi
 
 // Route::get("/profile", function()

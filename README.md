@@ -50,3 +50,12 @@ php artisan migration list
 
 -> php artisan make:migration add_abc_to_posts_table
 -> ab agar me add_abc_to_posts_table yaha per kuch add kertha ho thu wo posts wali real class me add hojyngy with table in mysql database
+
+
+
+-> php artisan make:model Post
+-> create model
+
+-> php artisan make:controller postsController
+-> create controller
+
